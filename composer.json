@@ -10,7 +10,7 @@
             "name": "Thiago Talma",
             "email": "thiago@thiagomt.com",
             "homepage": "http://www.thiagomt.com/"
-        },
+        }
     ],
     "minimum-stability": "dev",
     "require": {
