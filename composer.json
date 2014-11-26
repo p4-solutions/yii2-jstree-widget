@@ -13,5 +13,5 @@
         "psr-4": {
             "P4\\JsTree\\widgets\\": "widgets/"
         }
-    },
+    }
 }
