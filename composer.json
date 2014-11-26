@@ -8,5 +8,10 @@
     "require": {
         "yiisoft/yii2": "*",
         "vakata/jstree": "*"        
-    }
+    },
+     "autoload": {
+        "psr-4": {
+            "P4\JsTree\widgets\\": "widgets/"
+        }
+    },
 }
