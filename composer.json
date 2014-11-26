@@ -1,5 +1,5 @@
 {
-    "name": "p4-solutions/yii2-jstree-widget",
+    "name": "p4solutions/yii2-jstree-widget",
     "description": "Widget for Yii Framework 2.0 to use JsTree",
     "keywords": ["yii2", "extension", "widget", "form", "jstree"],
     "homepage": "https://github.com/p4-solutions/yii2-jstree-widget",
@@ -19,7 +19,7 @@
     },
     "autoload": {
         "psr-4": {
-            "p4solutions\\jstree\\": ""
+            "p4solutions\\yii2-jstree-widget\\": ""
         }
     }
 }
