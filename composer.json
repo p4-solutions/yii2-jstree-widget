@@ -11,7 +11,7 @@
     },
      "autoload": {
         "psr-4": {
-            "P4\JsTree\widgets\\": "widgets/"
+            "P4\\JsTree\\widgets\\": "widgets/"
         }
     },
 }
