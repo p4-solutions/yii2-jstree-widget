@@ -116,10 +116,18 @@ class JsTree extends InputWidget
         ];
         $defaults = Json::encode($config);
 
+
         $inputId = Html::getInputId($this->model, $this->attribute);
 
         $js = <<<SCRIPT
-;(function($, window, document, undefined) {
+;
+(function($, window, document, undefined) {
+
+    var optionvals = {$defaults};
+    if(optionvals.search.search_callback){
+        optionvals.search.search_callback = window[optionvals.search.search_callback];
+    }
+
     $('#jsTree_{$this->options['id']}')
         .bind("loaded.jstree", function (event, data) {
                 $("#{$inputId}").val(JSON.stringify(data.selected));
@@ -127,7 +135,7 @@ class JsTree extends InputWidget
         .bind("changed.jstree", function(e, data, x){
                 $("#{$inputId}").val(JSON.stringify(data.selected));
         })
-        .jstree({$defaults});
+        .jstree(optionvals);
 })(window.jQuery, window, document);
 SCRIPT;
         $view->registerJs($js);
