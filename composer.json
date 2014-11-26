@@ -19,7 +19,7 @@
     },
     "autoload": {
         "psr-4": {
-            "p4solutions\\yii2-jstree-widget\\": ""
+            "p4solutions\\yii2-jstree-widget\\widgets": ""
         }
     }
 }
