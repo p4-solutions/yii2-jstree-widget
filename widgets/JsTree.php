@@ -6,7 +6,7 @@
  * @version 1.0.0
  */
 
-namespace talma\widgets;
+namespace P4\JsTree\widgets;
 
 use yii\helpers\Html;
 use yii\helpers\Json;
